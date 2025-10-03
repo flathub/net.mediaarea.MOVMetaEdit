@@ -1,7 +1,7 @@
 {
   "app-id": "net.mediaarea.MOVMetaEdit",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-23.08",
+  "runtime-version": "5.15-24.08",
   "sdk": "org.kde.Sdk",
   "command": "movmetaedit-gui",
   "rename-desktop-file": "movmetaedit-gui.desktop",
@@ -21,8 +21,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/movmetaedit/24.06/movmetaedit_24.06.tar.xz",
-          "sha256": "69bfbf3b63cf821a2eb605bf6ba3709c52cccd72bb934b07f0a36dc27fc1d8b6"
+          "url": "https://mediaarea.net/download/source/movmetaedit/25.09/movmetaedit_25.09.tar.xz",
+          "sha256": "ec9263d515c0a6eda6004584da75d5cba81bfc96c9596d02a8f4cef8fb9d9a82"
         },
         {
             "type": "file",
