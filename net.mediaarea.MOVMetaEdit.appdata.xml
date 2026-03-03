@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2016-2024 MediaArea.net <info@mediaarea.net> -->
-<component type="desktop">
-  <id type="desktop">net.mediaarea.MOVMetaEdit.desktop</id>
+<component type="desktop-application">
+  <id>net.mediaarea.MOVMetaEdit</id>
   <launchable type="desktop-id">net.mediaarea.MOVMetaEdit.desktop</launchable>
   <metadata_license>CC0</metadata_license>
   <project_license>MIT</project_license>
   <name>MOV MetaEdit</name>
   <summary>Embed and edit Universal Ad ID metadata in MOV or MP4 files</summary>
   <description>
-    <p>MOV MetaEdit is a tool that supports the embedding and editing of metadata in MOV (Apple QuickTime) or MP4 (ISO/IEC 14496-14 a.k.a. MPEG-4 Part 14) files.</p>
+    <p>MOV MetaEdit is a tool that supports the embedding and editing of metadata in MOV (Apple QuickTime)
+      or MP4 (ISO/IEC 14496-14 a.k.a. MPEG-4 Part 14) files.</p>
     <p>It is currently focused on Universal Ad ID metadata but could be expanded on request.</p>
     <p>Sponsored by Ad-ID; designed, led and fully developed by MediaArea.</p>
   </description>
@@ -22,32 +23,17 @@
       <image>https://mediaarea.net/bundles/movmetaedit/img/MOVMetaEdit_Linux_AdId_en.png</image>
     </screenshot>
   </screenshots>
-  <content_rating type="oars-1.0">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+  <content_rating type="oars-1.1"/>
   <url type="homepage">https://mediaarea.net/MOVMetaEdit</url>
   <url type="bugtracker">https://github.com/MediaArea/MOVMetaEdit/issues</url>
+  <url type="vcs-browser">https://github.com/MediaArea/MOVMetaEdit</url>
   <update_contact>info@mediaarea.net</update_contact>
-  <developer_name>MediaArea.net SARL</developer_name>
+  <provides>
+    <id>net.mediaarea.MOVMetaEdit.desktop</id>
+  </provides>
+  <developer id="net.mediaarea">
+    <name>MediaArea.net SARL</name>
+  </developer>
   <releases>
     <release version="25.09" date="2025-09-30" />
     <release version="24.06" date="2024-06-03" />
