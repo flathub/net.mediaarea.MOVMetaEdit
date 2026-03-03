@@ -1,28 +1,24 @@
-Flathub
--------
+# MOV MetaEdit
 
-Flathub is the central place for building and hosting Flatpak builds.
-Go to https://flathub.org/builds/ to see Flathub in action.
+___Embed and edit Universal Ad ID metadata in MOV or MP4 files___
 
-Building applications
----------------------
+MOV MetaEdit is a tool that supports the embedding and editing of metadata in MOV (Apple QuickTime) 
+or MP4 (ISO/IEC 14496-14 a.k.a. MPEG-4 Part 14) files.
 
-Application manifests should go in their own repository in the [Flathub](https://github.com/flathub) organization,
-named after the application ID.
+---
 
-For example, for gnome-recipes, there is a repository named org.gnome.Recipes which has the org.gnome.Recipes.json
-file at the toplevel.
+## Manual Install and Run
 
-Hosted builds should be stable releases, not development snapshots, so please use tarballs or git tags, not just
-the tip of a branch.
+Make sure you follow the [setup guide for your Linux distribution](https://flathub.org/en/setup) before installing.
 
-More detailed requirements can be found in the [Review Guidelines](https://github.com/flathub/flathub/wiki/Review-Guidelines)
-
-Using the Flathub repository
-----------------------------
-
-To install applications that are hosted on Flathub, use the following:
+```bash
+flatpak install flathub net.mediaarea.MOVMetaEdit
+flatpak run net.mediaarea.MOVMetaEdit
 ```
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+
+## Building
+
+```bash
+git clone git@github.com:flathub/net.mediaarea.MOVMetaEdit.git
+flatpak run org.flatpak.Builder build-dir --user --ccache --force-clean --install net.mediaarea.MOVMetaEdit.json
 ```
